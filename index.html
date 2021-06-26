@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Mycity-Weather</title>
+  <style>
+	body{
+		text-align:center;
+		background-image:url("https://www.tripcase.com/assets/web2/images/weather-bg/sunny.jpg");
+		background-size:cover;
+	}
+	.input{
+		margin-top:50px;
+	}
+	input[type=submit]{
+		background-color:grey;
+		color:white;
+		cursor:pointer;
+		margin:2px;
+	}
+	.container{
+		background-color: lightgrey;
+  		width: 500px;
+  		border: 15px solid black;
+  		padding: 50px;
+  		margin-left: 500px;
+		margin-top:50px;
+	}
+  </style>
+</head>
+<body>
+  <h1>Hi! Welcome to Mycity-Weather</h1>
+  <h2>My city weather</h2>
+    <div class="input">
+      <p><strong>Enter city name: </strong></p><input type="text" placeholder="Eg: Chennai" class="input_text">
+      <input type="submit" value="Submit" class="submit">
+    </div>
+
+
+  <div class="container">
+    <div class="card">
+      <h1 class="name" id="name"></h1>
+      <p class="temp"></p>
+      <p class="clouds"></p>
+      <p class="desc"></p>
+    </div>
+  </div>
+
+<script src="ap.js"></script>
+</body>
+</html>
